@@ -1,0 +1,27 @@
+{
+  "name": "hondaHackathon17",
+  "version": "1.0.0",
+  "description": "# About this app The purpose of this application is to address the challenges that the Los Angeles faces transitioning into a smart city.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "nodemon server/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EthanEFung/hondaHackathon17.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EthanEFung/hondaHackathon17/issues"
+  },
+  "homepage": "https://github.com/EthanEFung/hondaHackathon17#readme",
+  "dependencies": {
+    "cors": "^2.8.4",
+    "express": "^4.16.2",
+    "jest": "^21.2.1",
+    "nodemon": "^1.12.1"
+  }
+}
