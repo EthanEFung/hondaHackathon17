@@ -1,6 +1,6 @@
 const router = require("express").Router();
 
-router.use("/intersection", require("./roadCoordinate"));
+router.use("/roadCoordinate", require("./roadCoordinate"));
 
 router.get("/", (req, res) => {
   res.sendStatus(200);
