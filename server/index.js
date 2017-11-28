@@ -13,7 +13,8 @@ app
   .use(bodyParser.json())
   .use(express.static(path.join(__dirname, "../", "client")))
   .use(cors())
-  .use("/", routes);
+  .use("/", routes); // route for intersection was created.
+// The controller currently can make a request to get the intersection
 
 app.listen(PORT, err => {
   if (err) throw new Error("could not connect to port", PORT);
