@@ -38,6 +38,10 @@ npm run dev
             |----sampleModel python file
 ```
 
+## Current Implementation: The End-Result
+
+(assets/Honda Hackathon 2017 Current Implementation.pdf)
+
 ## Top-Level Overview: The Strategy Implemented
 
 The intent of this project is to train a machine learning python script that is
