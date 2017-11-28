@@ -1,6 +1,6 @@
 const router = require("express").Router();
 
-router.use("/sample", require("./sample"));
+router.use("/intersection", require("./intersection"));
 
 router.get("/", (req, res) => {
   res.sendStatus(200);

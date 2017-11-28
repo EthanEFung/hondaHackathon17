@@ -16,5 +16,5 @@ app
 
 app.listen(PORT, err => {
   if (err) throw new Error("could not connect to port", PORT);
-  console.log("listening on PORT", 3000);
+  console.log("listening on PORT", PORT);
 });
