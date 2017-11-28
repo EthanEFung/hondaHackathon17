@@ -1,7 +1,8 @@
 {
   "name": "hondaHackathon17",
   "version": "1.0.0",
-  "description": "# About this app The purpose of this application is to address the challenges that the Los Angeles faces transitioning into a smart city.",
+  "description":
+    "# About this app The purpose of this application is to address the challenges that the Los Angeles faces transitioning into a smart city.",
   "main": "index.js",
   "scripts": {
     "test": "jest",
@@ -23,7 +24,6 @@
     "cors": "^2.8.4",
     "express": "^4.16.2",
     "jest": "^21.2.1",
-    "nodemon": "^1.12.1",
-    "python-shell": "^0.4.0"
+    "nodemon": "^1.12.1"
   }
 }

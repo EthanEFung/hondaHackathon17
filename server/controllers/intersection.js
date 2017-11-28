@@ -1,25 +1,21 @@
-// const PythonShell = require("python-shell");
-
-// PythonShell.run("python ../sampleModel.py", { mode: "text" }, err => {
-//   if (err) console.log(err);
-//   console.log("finished");
-// });
-
+/** CURRENT BUG
+ * detailed below is the issue I am facing
+ */
 const spawn = require("child_process").spawn;
-const py = spawn("python", ["../sampleModel.py"]);
+const py = spawn("python", ["../sampleModel.py"]); //sampleModel is found in the server folder
 
-let data = [1, 2, 3, 4, 5];
-let dataString = "";
+let data = [1, 2, 3, 4, 5]; //here is the data I want to process
+let dataString = ""; //this is where the data from python should be after processing
 
 py.stdout.on("data", function(data) {
-  console.log("recieve data", data);
+  console.log("recieving data", data); //this print is never run in the terminal
   dataString += data.toString();
 });
 py.stdout.on("end", function() {
-  console.log("received");
+  console.log("received", dataString); //this is run with the empty string defined above
 });
-py.stdin.write(JSON.stringify(data));
-py.stdin.end();
+py.stdin.write(JSON.stringify(data)); //ideally this function is invoked and written to python
+py.stdin.end(); //ends the process
 
 module.exports = {
   getCollisionScore: (req, res) => {
