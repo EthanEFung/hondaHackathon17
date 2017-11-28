@@ -25,7 +25,6 @@ module.exports = {
   getCollisionScore: (req, res) => {
     console.log(dataString);
     const { intersection, long, lat } = req.params;
-
     res.send(dataString);
   }
 };
