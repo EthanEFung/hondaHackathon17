@@ -1,9 +1,7 @@
 const router = require("express").Router();
 
-router.use("/roadCoordinate", require("./roadCoordinate"));
-
-router.get("/", (req, res) => {
-  res.sendStatus(200);
-});
+router
+  .get("/", (req, res) => res.sendStatus(200))
+  .use("/roadCoordinate", require("./roadCoordinate"));
 
 module.exports = router;

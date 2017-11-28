@@ -1,10 +1,8 @@
 const router = require("express").Router();
 const controller = require("../controllers/roadCoordinate");
 
-router.get("/", (req, res) => {
-  res.send("specify query");
-});
-
-router.get("/getCollisionScore/", controller.getCollisionScore);
+router
+  .get("/", (req, res) => res.sendStatus(200))
+  .get("/getCollisionScore/:roadCoordinate", controller.getCollisionScore);
 
 module.exports = router;
