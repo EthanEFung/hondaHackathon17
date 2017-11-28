@@ -40,8 +40,7 @@ npm run dev
 
 ## Current Implementation: The End-Result
 
-![Current Implementation](assets/Honda Hackathon 2017 Current
-Implementation.pdf)
+[Current Implementation](assets/Honda Hackathon 2017 Current Implementation.pdf)
 
 ## Top-Level Overview: The Strategy Implemented
 
@@ -52,7 +51,7 @@ algorithm to determine whether the current location of the car has a high risk
 collision induced injuries. We can forsee in the future of taking into account
 major public events as independent variables as well.
 
-This algorithm is cached in our server to be utilized when an HTTP request is
-sent to our node server, and updated on a daily basises. Ideally, the UI will
+This algorithm will be cached in our server to be utilized when an HTTP request
+is sent to our node server, and updated on a daily basises. Ideally, the UI will
 track the geolocation on set intervals, and query our server to determine in
 real time the risk of the cars location, while the application is in use.
