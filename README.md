@@ -24,3 +24,30 @@ to launch developers server that instantly updates
 ```
 npm run dev
 ```
+
+## About the Current File Structure
+
+```
+{ root }
+    |----{ client }
+    |----{ test }
+    |----{ server }
+            |----{ controllers }
+            |----{ routes }
+            |----index.js server file
+            |----sampleModel python file
+```
+
+## Top-Level Overview: The Strategy Implemented
+
+The intent of this project is to train a machine learning python script that is
+trained with a collision dataset maintained by the city. The independent
+variables of time of day, weather, and street intersections. Are utilized by our
+algorithm to determine whether the current location of the car has a high risk
+collision induced injuries. We can forsee in the future of taking into account
+major public events as independent variables as well.
+
+This algorithm is cached in our server to be utilized when an HTTP request is
+sent to our node server, and updated on a daily basises. Ideally, the UI will
+track the geolocation on set intervals, and query our server to determine in
+real time the risk of the cars location, while the application is in use.
