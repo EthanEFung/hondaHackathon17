@@ -40,7 +40,8 @@ npm run dev
 
 ## Current Implementation: The End-Result
 
-!(assets/Honda Hackathon 2017 Current Implementation.pdf)
+![Current Implementation](assets/Honda Hackathon 2017 Current
+Implementation.pdf)
 
 ## Top-Level Overview: The Strategy Implemented
 
